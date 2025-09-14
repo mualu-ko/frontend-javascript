@@ -59,7 +59,7 @@ console.log(createEmployee(1000).constructor.name);  // Director
 console.log(createEmployee("$500").constructor.name); // Director
 
 // Type predicate function
-function isDirector(employee: Director | Teacher): employee is Director {
+export function isDirector(employee: Director | Teacher): employee is Director {
   return employee instanceof Director;
 }
 
